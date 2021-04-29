@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<title>Memory</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Archivo|Archivo+Narrow:600"
+			rel="stylesheet"
+		/>
+		<link href="css/site.css" rel="stylesheet" />
+		<link href="css/memory.css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@animxyz/core@0.4.0/dist/animxyz.min.css"
+		/>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule=""
+			src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+		></script>
+	</head>
+
+	<body>
+		<div id="bienvenida" class="bienvenida">
+			<div class="item-group" xyz="fade left duration-10 delay-3 stagger-5">
+				<div class="square xyz-in" xyz="inherit left">
+					<img src="/css/html5.png" />
+				</div>
+				<div class="square xyz-in" xyz="inherit left">
+					<img src="/css/css3.png" />
+				</div>
+				<div class="square xyz-in" xyz="inherit left">
+					<img src="/css/js.png" />
+				</div>
+				<div class="square xyz-in" xyz="inherit left">
+					<img src="/css/react.png" />
+				</div>
+				<div class="square xyz-in" xyz="inherit left">
+					<img src="/css/angular.png" />
+				</div>
+				<div class="square xyz-in" xyz="inherit left">
+					<img src="/css/vue.png" />
+				</div>
+			</div>
+
+			<h1>memory webdev.</h1>
+			<div class="bienvenida-botones">
+				<button id="juego-normal">¡Quiero jugar!</button>
+				<button id="juego-relax">Modo relax</button>
+			</div>
+
+			<div class="item-group" xyz="fade left duration-10 delay-3 stagger-5">
+				<div class="square xyz-in" xyz="inherit left">
+					<img src="/css/php.png" />
+				</div>
+				<div class="square xyz-in" xyz="inherit left">
+					<img src="/css/mysql.png" />
+				</div>
+				<div class="square xyz-in" xyz="inherit left">
+					<img src="/css/laravel.png" />
+				</div>
+				<div class="square xyz-in" xyz="inherit left">
+					<img src="/css/python.png" />
+				</div>
+				<div class="square xyz-in" xyz="inherit left">
+					<img src="/css/c.png" />
+				</div>
+				<div class="square xyz-in" xyz="inherit left">
+					<img src="/css/bootstrap.png" />
+				</div>
+			</div>
+		</div>
+		<header class="cabecera">
+			<div class="contadores">
+				<div class="contador-item">
+					<h4 class="cabecera-titulo">Movimientos</h4>
+					<div class="cabecera-num">
+						<span id="mov">00</span>/<span id="mov-total">20</span>
+					</div>
+				</div>
+
+				<div id="cronometro" class="contador-item">
+					<h4 class="cabecera-titulo">Tiempo</h4>
+					<div class="cabecera-num">
+						<span id="minutos">00</span>:<span id="segundos">00</span>
+					</div>
+				</div>
+			</div>
+			<div class="home">
+				<a class="icon__home" aria-current="page" href="memory.html">
+					<ion-icon name="home"></ion-icon>
+				</a>
+			</div>
+			<div class="nivel">
+				<h4 class="cabecera-titulo">Nivel</h4>
+				<div class="cabecera-num"><span id="nivel">01</span></div>
+			</div>
+			<button id="control-nivel" class="control-nivel">…</button>
+		</header>
+
+		<!--
+    <button class="reparteCartas_btn">repartir cartas</button>
+    <div id="contador">
+      <div class="contador">
+        <p>Aciertos</p>
+        <span id="contador-aciertos" class="tarjeta2">0</span>
+      </div>
+      <div class="contador">
+        <p>Errores</p>
+        <span id="contador-errores" class="tarjeta2">0</span>
+      </div>
+    </div>
+  -->
+
+		<main>
+			<div id="mesa" class="mesa"></div>
+
+			<!--
+      <div id="feedback" class="feedback">
+        <div class="modal">
+          <h2>¡Buen Trabajo!</h2>
+          <button id="reiniciar" class="reiniciar">¿Reiniciar?</button>
+        </div>
+      </div>
+    -->
+
+			<!--Pop-up sube nivel-->
+			<div id="subeNivel" class="sube-nivel">
+				<div class="modal">
+					<h2>¡Muy bien!</h2>
+					<button id="subir">Siguiente nivel</button>
+					<button class="reiniciar">Reiniciar</button>
+				</div>
+			</div>
+
+			<!--Pop-up Game Over-->
+			<div id="gameOver" class="game-over">
+				<div class="modal">
+					<h2>¿Oh no!</h2>
+					<p>Te has quedado sin movimientos 😭</p>
+					<button class="reiniciar">Reiniciar</button>
+				</div>
+			</div>
+
+			<!-- Pop-up Time Over-->
+			<div id="timeOver" class="game-over">
+				<div class="modal">
+					<h2>¡Oh no!</h2>
+					<p>Te has quedado sin tiempo 😭</p>
+					<button class="reiniciar">Reiniciar</button>
+				</div>
+			</div>
+
+			<!--Pop-up End Game-->
+			<div id="endGame" class="end-game">
+				<div class="modal">
+					<h2>¡Enhorabuena!</h2>
+					<p>Has superado todos los niveles 🏆</p>
+					<button class="reiniciar">Reiniciar</button>
+				</div>
+			</div>
+		</main>
+
+		<div class="selecciona-nivel">
+			<button id="cierra-niveles" class="cierra-niveles">&times;</button>
+			<ul></ul>
+		</div>
+
+		<audio
+			src="sonidos/acierto.mp3"
+			class="sonido"
+			id="sonido-acierto"
+			preload="auto"
+		></audio>
+
+		<audio
+			src="sonidos/error.mp3"
+			class="sonido"
+			id="sonido-error"
+			preload="auto"
+		></audio>
+
+		<audio
+			src="sonidos/carta.mp3"
+			class="sonido"
+			id="sonido-carta"
+			preload="auto"
+		></audio>
+
+		<footer>
+			<p>© 2021 - Eric Lehmann</p>
+		</footer>
+
+		<script src="js/variables-globales.js"></script>
+		<script src="js/descubrir-comparar.js"></script>
+		<script src="js/baraja-reparte.js"></script>
+		<script src="js/acierto-error.js"></script>
+		<script src="js/contador.js"></script>
+		<script src="js/cronometro.js"></script>
+		<script src="js/finalizar.js"></script>
+		<script src="js/game-over.js"></script>
+		<script src="js/cambia-nivel.js"></script>
+		<script src="js/menu-niveles.js"></script>
+		<script src="js/iniciar.js"></script>
+		<script src="js/comienza-juego.js"></script>
+	</body>
+</html>
