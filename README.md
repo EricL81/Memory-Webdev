@@ -31,7 +31,10 @@
 <br>
 
 
-<img align="center" src="memory1.png"/>
+![](memory1.png)
+<br>
 ![](memory2.png)
+<br>
 ![](memory3.png)
+<br>
 ![](memory4.png)
