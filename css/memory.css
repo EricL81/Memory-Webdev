@@ -10,6 +10,7 @@ main {
   display: flex;
   justify-content: center;
   position: relative;
+  background: black;
 }
 
 /*
@@ -81,6 +82,7 @@ main {
 
 .bienvenida-botones {
   display: flex;
+  font-size: 1.5rem;
 }
 
 .bienvenida button {
@@ -191,7 +193,7 @@ main {
 }
 
 .error {
-  animation: error 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  -webkit-animation: error 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
 
 /*
@@ -224,6 +226,10 @@ main {
   display: flex;
 }
 
+#subir {
+  font-size: 1.5rem;
+}
+
 .mesa {
   display: flex;
   flex-wrap: wrap;
@@ -233,7 +239,7 @@ main {
   margin: auto;
 }
 
-.modal {
+.my-modal {
   background: white;
   padding: 3rem 3rem 1rem;
   margin: auto;
@@ -246,17 +252,17 @@ main {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25), 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.modal h2 {
+.my-modal h2 {
   color: var(--violet);
   font-family: var(--font-display);
   margin: 0;
 }
 
-.modal p {
+.my-modal p {
   font-size: 1.5rem;
 }
 
-.modal button {
+.my-modal button {
   margin: 3rem 0;
 }
 
@@ -275,7 +281,7 @@ button {
   transition: 0.3s;
 }
 
-.modal .reiniciar {
+.my-modal .reiniciar {
   color: var(--hotpink);
   background: transparent;
   border: 0;
@@ -339,7 +345,7 @@ button {
   right: 0;
   top: 0;
   bottom: 0;
-  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
   backface-visibility: hidden;
   background-color: white;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25), 4px 4px 10px rgba(0, 0, 0, 0.2);
@@ -348,7 +354,6 @@ button {
   justify-content: center;
   align-items: center;
   font-size: 2.5rem;
-  padding-top: 0.4rem;
 }
 
 .tarjeta__contenido::selection {
@@ -356,35 +361,35 @@ button {
 }
 
 .tarjeta.descubierta {
-  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
 }
 
-@keyframes error {
+/* @-webkit-keyframes error {
   10%, 90% {
-    transform: rotateY(-180deg) translateX(-1px);
+    -webkit-transform: rotateY(-180deg) translateX(-1px);
   }
   20%, 80% {
-    transform: rotateY(-180deg) translateX(2px);
+    -webkit-transform: rotateY(-180deg) translateX(2px);
   }
   30%, 50%, 70% {
-    transform: rotateY(-180deg) translateX(-4px);
+    -webkit-transform: rotateY(-180deg) translateX(-4px);
   }
   40%, 60% {
-    transform: rotateY(-180deg) translateX(4px);
+    -webkit-transform: rotateY(-180deg) translateX(4px);
   }
-}
+} */
 
-@keyframes acierto {
+@-webkit-keyframes acierto {
   from {
-    transform: rotateY(-180deg) scale3d(1, 1, 1);
+    -webkit-transform: rotateY(-180deg) scale3d(1, 1, 1);
     opacity: 1;
   }
   25% {
-    transform: rotateY(-180deg) scale3d(1.1, 1.1, 1.1);
+    -webkit-transform: rotateY(-180deg) scale3d(1.1, 1.1, 1.1);
     opacity: 1;
   }
   to {
-    transform: rotateY(-180deg) scale3d(1, 1, 1);
+    -webkit-transform: rotateY(-180deg) scale3d(1, 1, 1);
     opacity: 0;
   }
 }
@@ -394,7 +399,7 @@ button {
 }
 
 .acertada .tarjeta__contenido {
-  animation: acierto 1.3s ease-in-out forwards;
+  -webkit-animation: acierto 1.3s ease-in-out forwards;
 }
 
 .sonido {

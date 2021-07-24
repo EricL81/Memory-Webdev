@@ -14,6 +14,12 @@
 		<link href="css/site.css" rel="stylesheet" />
 		<link href="css/memory.css" rel="stylesheet" />
 		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+			crossorigin="anonymous"
+		/>
+		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/@animxyz/core@0.4.0/dist/animxyz.min.css"
 		/>
@@ -28,52 +34,99 @@
 	</head>
 
 	<body>
-		<div id="bienvenida" class="bienvenida">
-			<div class="item-group" xyz="fade left duration-10 delay-3 stagger-5">
-				<div class="square xyz-in" xyz="inherit left">
-					<img src="/css/html5.png" />
+		<div id="bienvenida" class="container-fluid bienvenida">
+			<div class="row text-center">
+				<div class="col-12 col-md-6 my-2">
+					<div
+						class="item-group mx-0"
+						xyz="fade left duration-10 delay-3 stagger-5"
+					>
+						<div class="square xyz-in mx-1" xyz="inherit left">
+							<img src="/css/html5.png" />
+						</div>
+						<div class="square xyz-in mx-1" xyz="inherit left">
+							<img src="/css/css3.png" />
+						</div>
+						<div class="square xyz-in mx-1" xyz="inherit left">
+							<img src="/css/js.png" />
+						</div>
+						<div class="square xyz-in mx-1" xyz="inherit left">
+							<img src="/css/ruby.png" />
+						</div>
+					</div>
 				</div>
-				<div class="square xyz-in" xyz="inherit left">
-					<img src="/css/css3.png" />
-				</div>
-				<div class="square xyz-in" xyz="inherit left">
-					<img src="/css/js.png" />
-				</div>
-				<div class="square xyz-in" xyz="inherit left">
-					<img src="/css/react.png" />
-				</div>
-				<div class="square xyz-in" xyz="inherit left">
-					<img src="/css/angular.png" />
-				</div>
-				<div class="square xyz-in" xyz="inherit left">
-					<img src="/css/vue.png" />
+				<div class="col-12 col-md-6 my-2">
+					<div
+						class="item-group mx-0"
+						xyz="fade left duration-10 delay-3 stagger-5"
+					>
+						<div class="square xyz-in mx-1" xyz="inherit left">
+							<img src="/css/react.png" />
+						</div>
+						<div class="square xyz-in mx-1" xyz="inherit left">
+							<img src="/css/angular.png" />
+						</div>
+						<div class="square xyz-in mx-1" xyz="inherit left">
+							<img src="/css/vue.png" />
+						</div>
+						<div class="square xyz-in mx-1" xyz="inherit left">
+							<img src="/css/vsc.png" />
+						</div>
+					</div>
 				</div>
 			</div>
 
-			<h1>memory webdev.</h1>
-			<div class="bienvenida-botones">
-				<button id="juego-normal">¡Quiero jugar!</button>
-				<button id="juego-relax">Modo relax</button>
+			<div class="row">
+				<div class="col-12">
+					<h1>memory webdev.</h1>
+				</div>
 			</div>
-
-			<div class="item-group" xyz="fade left duration-10 delay-3 stagger-5">
-				<div class="square xyz-in" xyz="inherit left">
-					<img src="/css/php.png" />
+			<div class="row bienvenida-botones">
+				<div class="col-12 col-md-6 my-2">
+					<button class="rounded-pill" id="juego-normal">¡QUIERO JUGAR!</button>
 				</div>
-				<div class="square xyz-in" xyz="inherit left">
-					<img src="/css/mysql.png" />
+				<div class="col-12 col-md-6 my-2">
+					<button class="rounded-pill" id="juego-relax">MODO RELAX</button>
 				</div>
-				<div class="square xyz-in" xyz="inherit left">
-					<img src="/css/laravel.png" />
+			</div>
+			<div class="row text-center">
+				<div class="col-12 col-md-6 my-2">
+					<div
+						class="item-group mx-0"
+						xyz="fade left duration-10 delay-3 stagger-5"
+					>
+						<div class="square xyz-in mx-1" xyz="inherit left">
+							<img src="/css/bootstrap.png" />
+						</div>
+						<div class="square xyz-in mx-1" xyz="inherit left">
+							<img src="/css/php.png" />
+						</div>
+						<div class="square xyz-in mx-1" xyz="inherit left">
+							<img src="/css/mysql.png" />
+						</div>
+						<div class="square xyz-in mx-1" xyz="inherit left">
+							<img src="/css/gitlab.png" />
+						</div>
+					</div>
 				</div>
-				<div class="square xyz-in" xyz="inherit left">
-					<img src="/css/python.png" />
-				</div>
-				<div class="square xyz-in" xyz="inherit left">
-					<img src="/css/c.png" />
-				</div>
-				<div class="square xyz-in" xyz="inherit left">
-					<img src="/css/bootstrap.png" />
+				<div class="col-12 col-md-6 my-2">
+					<div
+						class="item-group mx-0"
+						xyz="fade left duration-10 delay-3 stagger-5"
+					>
+						<div class="square xyz-in mx-1" xyz="inherit left">
+							<img src="/css/laravel.png" />
+						</div>
+						<div class="square xyz-in mx-1" xyz="inherit left">
+							<img src="/css/python.png" />
+						</div>
+						<div class="square xyz-in mx-1" xyz="inherit left">
+							<img src="/css/c.png" />
+						</div>
+						<div class="square xyz-in mx-1" xyz="inherit left">
+							<img src="/css/git.png" />
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -124,7 +177,7 @@
 
 			<!--
       <div id="feedback" class="feedback">
-        <div class="modal">
+        <div class="my-modal">
           <h2>¡Buen Trabajo!</h2>
           <button id="reiniciar" class="reiniciar">¿Reiniciar?</button>
         </div>
@@ -133,16 +186,16 @@
 
 			<!--Pop-up sube nivel-->
 			<div id="subeNivel" class="sube-nivel">
-				<div class="modal">
+				<div class="my-modal">
 					<h2>¡Muy bien!</h2>
-					<button id="subir">Siguiente nivel</button>
+					<button class="rounded-pill" id="subir">Siguiente nivel</button>
 					<button class="reiniciar">Reiniciar</button>
 				</div>
 			</div>
 
 			<!--Pop-up Game Over-->
 			<div id="gameOver" class="game-over">
-				<div class="modal">
+				<div class="my-modal">
 					<h2>¿Oh no!</h2>
 					<p>Te has quedado sin movimientos 😭</p>
 					<button class="reiniciar">Reiniciar</button>
@@ -151,7 +204,7 @@
 
 			<!-- Pop-up Time Over-->
 			<div id="timeOver" class="game-over">
-				<div class="modal">
+				<div class="my-modal">
 					<h2>¡Oh no!</h2>
 					<p>Te has quedado sin tiempo 😭</p>
 					<button class="reiniciar">Reiniciar</button>
@@ -160,7 +213,7 @@
 
 			<!--Pop-up End Game-->
 			<div id="endGame" class="end-game">
-				<div class="modal">
+				<div class="my-modal">
 					<h2>¡Enhorabuena!</h2>
 					<p>Has superado todos los niveles 🏆</p>
 					<button class="reiniciar">Reiniciar</button>
@@ -197,6 +250,12 @@
 		<footer>
 			<p>© 2021 - Eric Lehmann</p>
 		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+			crossorigin="anonymous"
+		></script>
 
 		<script src="js/variables-globales.js"></script>
 		<script src="js/descubrir-comparar.js"></script>

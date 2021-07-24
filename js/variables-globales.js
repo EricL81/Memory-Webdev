@@ -15,6 +15,7 @@ var grupoTarjetas = [
   ['js.png','php.png'],
   ['react.png','angular.png','vue.png','bootstrap.png'],
   ['mysql.png','laravel.png','python.png','c.png'],
+  ['git.png','vsc.png','ruby.png','gitlab.png'],
 
 ];
 
@@ -49,7 +50,7 @@ var niveles = [
     tiempoMaxMin: 1,
     tiempoMaxSec: 30,
   },
-/*   {
+  {
     tarjetas: grupoTarjetas[0].concat(
       grupoTarjetas[1],
       grupoTarjetas[2],
@@ -59,5 +60,5 @@ var niveles = [
     movimientosMax: 60,
     tiempoMaxMin: 2,
     tiempoMaxSec: 00,
-  }, */
+  },
 ];

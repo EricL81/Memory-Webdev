@@ -3,9 +3,9 @@ function escribeNiveles() {
   niveles.forEach(function (elemento, indice) {
     var controlNivel = document.createElement("li");
     controlNivel.innerHTML =
-      "<button class='nivel'  data-nivel=" +
+      "<button class='nivel fs-1'  data-nivel=" +
       indice +
-      ">Nivel" +
+      ">Nivel " +
       (indice + 1) +
       "</button>";
     menuNiveles.appendChild(controlNivel);
