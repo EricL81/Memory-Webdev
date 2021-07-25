@@ -27,6 +27,12 @@
 <br>
 <br>
 <br>
+
+## User Flowchart:
+
+![](Memory-flowchart.png)
+
+<br>
 <br>
 <br>
 
